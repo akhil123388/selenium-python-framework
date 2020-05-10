@@ -42,7 +42,7 @@ class RegisterCoursesPage(BasePage):
         self.elementClick(locator=self._enroll_button)
 
     def enterCardNum(self, num):
-        time.sleep(6)
+        time.sleep(15)
         # self.switchToFrame(name="__privateStripeFrame8")
         self.SwitchFrameByIndex(self._cc_num, locatorType="xpath")
         self.sendKeysWhenReady(num, locator=self._cc_num, locatorType="xpath")
