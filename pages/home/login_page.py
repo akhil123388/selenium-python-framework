@@ -39,7 +39,7 @@ class LoginPage(BasePage):
         self.clearFields()
         self.enterEmail(email)
         self.enterPassword(password)
-        time.sleep(1)
+        time.sleep(3)
         self.clickLoginButton()
 
     def verifyLoginSuccessful(self):
