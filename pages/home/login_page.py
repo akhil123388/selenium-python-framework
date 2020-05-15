@@ -31,9 +31,6 @@ class LoginPage(BasePage):
     def clickLoginButton(self):
         self.elementClick(self._login_button, locatorType="name")
 
-    def clearLoginFields(self):
-        self.clearField()
-
     def login(self, email="", password=""):
         self.clickLoginLink()
         self.clearFields()
